@@ -1,3 +1,4 @@
+
 public class Motorcycle extends Vehicle {
 	private int cubics;
 	private int volumeOfTank;
