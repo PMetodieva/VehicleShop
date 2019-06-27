@@ -1,4 +1,3 @@
-
 public class Motorcycle extends Vehicle {
 	private int cubics;
 	private int volumeOfTank;
@@ -19,8 +18,8 @@ public class Motorcycle extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Motorcycle [cubics=" + cubics + ", volumeOfTank=" + volumeOfTank + ", price=" + price + ", brand="
-				+ brand + ", model=" + model + ", colour=" + colour + ", isRented=" + isRented + "]";
+		return "Motorcycle [cubics = " + cubics + ", volumeOfTank = " + volumeOfTank + ", price = " + price + ", brand = "
+				+ brand + ", model = " + model + ", colour = " + colour + ", isRented = " + isRented + "]";
 	}
 
 }

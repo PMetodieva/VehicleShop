@@ -14,8 +14,6 @@ public abstract class Vehicle {
 		this.isRented = false;
 	}
 	
-	
-
 
 	@Override
 	public int hashCode() {
