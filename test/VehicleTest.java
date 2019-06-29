@@ -39,7 +39,7 @@ class VehicleTest {
 	}
  
     @AfterAll
-    static void finish(){
+    static void finish() {
        System.out.println("Tests are finished!");
     }
 }
