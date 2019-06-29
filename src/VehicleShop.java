@@ -1,4 +1,4 @@
-//import java.util.Collections;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
@@ -7,17 +7,22 @@ import java.util.TreeSet;
 public class VehicleShop {
 	private String name;
 	private Set<Vehicle> vehicles;
+	
 
-	
-	public String getName() {
-		return name;
-	}
-	
 	public VehicleShop(String name) {
 		this.name = name;
 		this.vehicles = new HashSet<Vehicle>();
 	}
 
+	public String getName() {
+		return name;
+	}
+	
+	
+	public Set<Vehicle> getVehicles() {
+		return Collections.unmodifiableSet(vehicles);
+	}
+	
 	public void addVehicle(Vehicle vehicleToAdd) {
 		this.vehicles.add(vehicleToAdd);
 	}
