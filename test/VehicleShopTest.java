@@ -14,11 +14,11 @@ class VehicleShopTest {
 			.wihtHorsepowers(115)
 			.withMaxSpped(240)
 			.fromZeroToSixty(7.9f);
-	private static Vehicle volvo = new Car(5000, "Volvo", "E36", "gold")
+    private static Vehicle volvo = new Car(5000, "Volvo", "E36", "gold")
 			.wihtHorsepowers(140)
 			.withMaxSpped(260)
 			.fromZeroToSixty(7.9f);
-	private static Vehicle kawazaki = new Motorcycle(2000, "Kawazaki", "Ninja", "yellow")
+    private static Vehicle kawazaki = new Motorcycle(2000, "Kawazaki", "Ninja", "yellow")
 			.withCubics(400)
 			.withVolumeOfTank(40);
     
@@ -33,7 +33,6 @@ class VehicleShopTest {
 		assertEquals("My Vehicle Shop", result);
 	}
 	
-	@SuppressWarnings("null")
 	@Test
 	void testGetVehicles() {
 		Set<Vehicle> v = new HashSet<Vehicle>();
@@ -71,6 +70,7 @@ class VehicleShopTest {
 		assertEquals(v, result);
 	}
 	
+	@Test
 	void testSortByColour() {
 		myShop.addVehicle(volvo);
 		myShop.addVehicle(kawazaki);
