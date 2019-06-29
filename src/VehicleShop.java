@@ -8,6 +8,13 @@ public class VehicleShop {
 	private String name;
 	private Set<Vehicle> vehicles;
 	
+	private Set<Vehicle> sortBy(Comparator<Vehicle> comparator) {
+		Set<Vehicle> result = new TreeSet<>(comparator);
+		for (Vehicle vehicle : this.vehicles) {
+			result.add(vehicle);
+		}
+		return result;
+	}
 
 	public VehicleShop(String name) {
 		this.name = name;
@@ -72,13 +79,6 @@ public class VehicleShop {
 		return result;
 	}
 	
-	public Set<Vehicle> sortBy(Comparator<Vehicle> comparator) {
-		Set<Vehicle> result = new TreeSet<>(comparator);
-		for (Vehicle vehicle : this.vehicles) {
-			result.add(vehicle);
-		}
-		return result;
-	}
 	
 	public void printAllVehicles() {
 		for (Vehicle vehicle : this.vehicles) {
